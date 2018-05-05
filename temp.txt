@@ -12,3 +12,4 @@ function restapi(router, session, bodyParser, sql) {
 }
 restapi.prototype.handleRoutes = function(router, session, bodyParser, sql, sqlconnect) {
 }
+module.exports = restapi;
