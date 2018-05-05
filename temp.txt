@@ -1,0 +1,14 @@
+From server
+
+var productregisterApi = require('./controller/product-register-controller');
+var restRouter = new productregisterApi(router, session, bodyParser, sql);
+
+In Controller
+
+function restapi(router, session, bodyParser, sql) {
+    var self = this;
+    const sqlconnect = require("../config").sqlLive
+    self.handleRoutes(router, session, bodyParser, sql, sqlconnect);
+}
+restapi.prototype.handleRoutes = function(router, session, bodyParser, sql, sqlconnect) {
+}
